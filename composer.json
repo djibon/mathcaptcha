@@ -1,11 +1,11 @@
 {
-    "name": "devfactory/captcha",
-    "description": "A multiple instance, captcha for laravel 4",
+    "name": "djibon/laramathcaptcha",
+    "description": "Simple Math Captch for Laravel 4",
     "keywords": ["Laravel 4", "Laravel", "Captcha"],
     "authors": [
         {
-            "name": "Alcindo Da Costa",
-            "email": "alcindo.dacosta@devfactory.ch"
+            "name": "bayuadji",
+            "email": "bayuadji@gmail.com"
         }
     ],
     "require": {
@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Devfactory\\Captcha\\": "src/"
+            "Djibon\\Captcha\\": "src/"
         }
     },
     "minimum-stability": "stable"
