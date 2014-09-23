@@ -1,0 +1,21 @@
+{
+    "name": "devfactory/captcha",
+    "description": "A multiple instance, captcha for laravel 4",
+    "keywords": ["Laravel 4", "Laravel", "Captcha"],
+    "authors": [
+        {
+            "name": "Alcindo Da Costa",
+            "email": "alcindo.dacosta@devfactory.ch"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "~4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Devfactory\\Captcha\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
