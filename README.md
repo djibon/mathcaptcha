@@ -1,11 +1,8 @@
 #Captcha
 
-> A simple captcha for laravel 4 
+> A simple Math Captcha for laravel 4 
 
-## Preview
-
-![Preview](http://aparnet.ir/wp-content/uploads/2014/04/captcha.png)
-
+this work based on laravel captcha https://bitbucket.org/devfactory/captcha/
 ##How to setup
 
 update `composer.json` file:
@@ -14,7 +11,7 @@ update `composer.json` file:
 {
     "require": {
         "laravel/framework": "4.1.*",
-        "devfactory/captcha": "dev-master"
+        "djibon/captcha": "dev-master"
     }
 }
 ```
@@ -25,13 +22,13 @@ update `app.php` file in `app/config` directory:
 
 ```php
 'providers' => array(
-  devfactory\Captcha\CaptchaServiceProvider'
+  Djibon\Captcha\CaptchaServiceProvider'
 ),
 ```
 
 ```php
 alias => array(
-      'Captcha' => 'devfactory\Captcha\Facades\Captcha'
+      'Captcha' => 'Djibon\Captcha\Facades\Captcha'
 ),
 ```
 
@@ -40,7 +37,7 @@ alias => array(
 in your HTML form add following code:
 
 ```html
-{{ Captcha::img('captcha1') }}
+{{ Captcha::img_math('captcha1') }}
 {{ Form::text('input_captcha') }}
 
 ```
